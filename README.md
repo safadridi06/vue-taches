@@ -1,38 +1,55 @@
-# vue-taches
+# Gestion d'une liste de tâches
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+Cette application Vue.js permet de gérer une liste de tâches.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+L'utilisateur peut :
 
-## Recommended Browser Setup
+* Ajouter une tâche
+* Marquer une tâche comme terminée
+* Supprimer une tâche
+* Consulter le nombre de tâches non terminées
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Installation
 
-## Customize configuration
+Installer les dépendances avec :
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Lancer le projet
 
-```sh
+Pour lancer l'application en mode développement :
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Fonctionnalités
 
-```sh
-npm run build
-```
+* Ajouter une nouvelle tâche
+* Empêcher l'ajout d'une tâche vide
+* Marquer une tâche comme terminée
+* Afficher les tâches terminées avec un texte barré
+* Supprimer une tâche
+* Afficher automatiquement le nombre de tâches non terminées
+* Afficher un message lorsque la liste est vide
+
+## Technologies utilisées
+
+* Vue.js 3
+* Vite
+* JavaScript
+* HTML
+* CSS
+## Concepts utilisés
+
+* **ref** : permet de créer une donnée réactive dans Vue.js.
+* **v-model** : permet de lier un champ de formulaire à une donnée.
+* **v-for** : permet d'afficher chaque élément d'un tableau.
+* **:key** : permet d'identifier chaque élément de manière unique dans `v-for`.
+* **computed** : permet de calculer une valeur automatiquement à partir de données réactives.
+* **@submit.prevent** : permet de gérer la soumission du formulaire sans recharger la page.
+* **@click** : permet d'exécuter une fonction lorsqu'un élément est cliqué.
